@@ -1,0 +1,19 @@
+{
+  "name": "cra-template-iglu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "template.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iglu/cra-template-iglu.git"
+  },
+  "author": "Iglu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iglu/cra-template-iglu/issues"
+  },
+  "homepage": "https://github.com/iglu/cra-template-iglu#readme"
+}
