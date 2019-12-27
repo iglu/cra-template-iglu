@@ -1,0 +1,114 @@
+@import 'variables';
+
+* {
+  /* transition: all 0.32s ease; */
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f1f3f5;
+  overflow-x: hidden;
+  color: #343a40;
+  font: 400 16px/1.5 sans-serif;
+}
+
+a {
+  color: #1971c2;
+}
+
+svg {
+  display: block;
+  width: $icon-size;
+  height: $icon-size;
+  fill: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+table {
+  margin: 1em 0 0;
+  font-weight: 400;
+}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0.5em 0;
+}
+
+h1,
+.h1 {
+  font-size: 2rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.25rem;
+}
+
+h4,
+.h4 {
+  font-size: 1rem;
+}
+
+h5,
+.h5 {
+  font-size: 0.875rem;
+}
+
+h6,
+.h6 {
+  font-size: 0.75rem;
+}
+
+.list--unstyled {
+  padding: 0;
+  list-style: none;
+}
+
+.list--inline {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+
+  > li {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+/* Exception rules (use it with caution):
+   * Note: We are using REMs over EMs to enforce consistent spacing across the app. For less/more space use other mt-(n). */
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mt-1 {
+  margin-top: 1rem !important;
+}
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+.mt-2 {
+  margin-top: 2rem !important;
+}
+.mb-2 {
+  margin-bottom: 2rem !important;
+}

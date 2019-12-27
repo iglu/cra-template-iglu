@@ -1,0 +1,26 @@
+/* Typography */
+$font-size: 16px;
+$line-height: 1.5;
+$font-size-smaller: 0.875rem;
+$body-text: 400 1em/1.75 'Open Sans', sans-serif;
+$heading1-text: 400 2.5em/1.25em 'Abel', sans-serif;
+$heading2-text: 400 2em/1.25em 'Abel', sans-serif;
+$heading3-text: 600 1.25em/1.5em 'Open Sans', sans-serif;
+
+/* Spacing
+ * Vertical spacing: we are combining EMs and REMs to enforce appropiate and consistent spacing for improved readibility in body content.
+ * Horizontal spacing: we are REMs to enforce appropiate and consistent spacing. */
+$spacing: 1rem;
+$spacing-double: 2rem;
+$spacing-slim: 0.5rem;
+$spacing-thin: 0.25rem;
+$vertical-spacing: 1em 0 0;
+$vertical-spacing-slim: 0.5em 0 0;
+$vertical-spacing-thin: 0.25em 0 0;
+$horizontal-spacing: 0 $spacing;
+$horizontal-spacing-double: 0 ($spacing-double);
+$horizontal-spacing-slim: 0 $spacing-slim;
+$horizontal-spacing-thin: 0 $spacing-thin;
+
+/* Icons */
+$icon-size: (1em * $line-height); // font-size * line-height (helps to align icons correctly and consistently)
