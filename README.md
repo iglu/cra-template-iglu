@@ -18,7 +18,7 @@ yarn create react-app my-app --template iglu
 
 - Quality tools (code): [Typescript](http://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [React-testing-library](https://testing-library.com/docs/react-testing-library/intro)
 - Quality tools (UI): [Storybook](https://storybook.js.org/)
-- Addons: [SASS](https://sass-lang.com/)
+- Addons: [SASS](https://sass-lang.com/), [axios](https://github.com/axios/axios)
 
 ## Available Scripts
 
