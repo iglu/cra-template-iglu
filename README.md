@@ -16,13 +16,36 @@ yarn create react-app my-app --template iglu
 
 ## Additional changes required (Custom Template limitations)
 
-Copy files from `project-folder/src/_PROJECT_ROOT_` to `project-folder` (template can't add files to project root folder)
+Copy files from `project-folder/src/_PROJECT_ROOT_` to `project-folder/` (can't be added with custom template)
+
+Currently template only updates `package.json` dependencies and scripts object, so we have to add view lines manually:
+
+```
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run test:coverage"
+    }
+  },
+  "lint-staged": {
+    "**/*.{ts, tsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
+```
 
 ## Features
 
 - Quality tools (code): [Typescript](http://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [React-testing-library](https://testing-library.com/docs/react-testing-library/intro)
 - Quality tools (UI): [Storybook](https://storybook.js.org/)
 - Addons: [SASS](https://sass-lang.com/), [axios](https://github.com/axios/axios)
+- Performance: [Fast Refresh](https://github.com/pmmmwh/react-refresh-webpack-plugin)
 
 ## Available Scripts
 
@@ -39,3 +62,4 @@ Copy files from `project-folder/src/_PROJECT_ROOT_` to `project-folder` (templat
 ## Guidelines
 
 - [Front-End: System of components](https://medium.com/@antonaavik/front-end-system-of-components-aac7cc45f05)
+- [React: Custom Template for Iglu](https://medium.com/iglu-ou/react-custom-template-for-iglu-7644e1303668)
