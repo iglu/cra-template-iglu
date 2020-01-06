@@ -28,10 +28,12 @@ Currently template only updates `package.json` dependencies and scripts object, 
 
 ## Features
 
-- Quality tools (code): [Typescript](http://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [React-testing-library](https://testing-library.com/docs/react-testing-library/intro)
+- Quality tools (code): [Typescript](http://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [React-testing-library](https://testing-library.com/docs/react-testing-library/intro), [Husky](https://github.com/typicode/husky)
 - Quality tools (UI): [Storybook](https://storybook.js.org/)
+- Quality tools (A11y): [React Axe](https://github.com/dequelabs/react-axe)
 - Addons: [SASS](https://sass-lang.com/)
 - Performance: [Fast Refresh](https://github.com/pmmmwh/react-refresh-webpack-plugin)
+- Hosting: [Netlify](https://www.netlify.com)
 
 ## Available Scripts
 
