@@ -14,6 +14,10 @@ npx create-react-app my-app --template iglu
 yarn create react-app my-app --template iglu
 ```
 
+## Additional changes required (Custom Template limiations)
+
+Copy files from `project-folder/src/_PROJECT_ROOT_` to `project-folder` (template can't add files to project root folder)
+
 ## Features
 
 - Quality tools (code): [Typescript](http://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [React-testing-library](https://testing-library.com/docs/react-testing-library/intro)
