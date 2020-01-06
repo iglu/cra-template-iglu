@@ -14,7 +14,7 @@ npx create-react-app my-app --template iglu
 yarn create react-app my-app --template iglu
 ```
 
-## Additional changes required (Custom Template limiations)
+## Additional changes required (Custom Template limitations)
 
 Copy files from `project-folder/src/_PROJECT_ROOT_` to `project-folder` (template can't add files to project root folder)
 

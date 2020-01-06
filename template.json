@@ -25,9 +25,14 @@
     "react-router-dom": "^5.1.2",
     "axios": "^0.19.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.1.3",
-    "customize-cra": "0.9.1"
+    "customize-cra": "0.9.1",
+    "react-refresh": "0.7.1",
+    "react-app-rewired": "2.1.5"
   },
   "scripts": {
-    "storybook": "start-storybook -c ./src/.storybook/"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "storybook": "start-storybook"
   }
 }

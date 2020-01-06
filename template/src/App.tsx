@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import { MAPPED_ROUTES, RouteValue } from './routes'
-import api from './api'
 
 import './App.scss'
 
@@ -21,19 +20,21 @@ const App: React.FC = () => {
     </Router>
   )
 
-  function LazyComponent(Component: React.ComponentType) {
-    return (props: any) => (
-      <Suspense fallback="Loading ...">
-        <Component {...props} />
-      </Suspense>
-    )
+  function LazyComponent(Component: React.ComponentType): React.ComponentType {
+    return function wrappedWithSuspense(props) {
+      return (
+        <Suspense fallback="Loading ...">
+          <Component {...props} />
+        </Suspense>
+      )
+    }
   }
 
-  function renderNavLinks() {
+  function renderNavLinks(): React.ReactNode {
     return <ul className="shell__nav-items">{MAPPED_ROUTES.map(renderNavLink)}</ul>
   }
 
-  function renderNavLink({ name, pattern }: RouteValue, index: number) {
+  function renderNavLink({ name, pattern }: RouteValue, index: number): React.ReactNode {
     return (
       <li key={`nav-${index}`}>
         <Link to={pattern}>{name}</Link>
