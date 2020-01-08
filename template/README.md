@@ -4,7 +4,7 @@
 
 Copy files from `project-folder/src/_PROJECT_ROOT_` to `project-folder/` (can't be added with custom template)
 
-Currently template only updates `package.json` dependencies and scripts object, so we have to add view lines manually:
+Currently template only updates `package.json` dependencies and scripts object, so we have to add few lines manually:
 
 ```
 {
