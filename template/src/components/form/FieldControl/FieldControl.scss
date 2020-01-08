@@ -1,0 +1,8 @@
+@import './../../../scss/variables';
+
+.field-control__msg {
+  font-size: $font-size-smaller;
+}
+.field-control__msg--error {
+  color: $color-error;
+}

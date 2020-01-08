@@ -25,6 +25,10 @@ svg {
   fill: currentColor;
 }
 
+label {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -34,7 +38,8 @@ h6,
 p,
 ol,
 ul,
-table {
+table,
+label {
   margin: 1em 0 0;
   font-weight: 400;
 }

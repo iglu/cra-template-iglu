@@ -29,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({
   href,
   target,
   disabled,
-  type = 'button',
+  type = 'submit',
   label,
   iconLeft,
   iconRight,
