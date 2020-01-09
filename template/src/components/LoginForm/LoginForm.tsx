@@ -30,18 +30,15 @@ const LoginForm: React.FC<LoginFormProps> = ({ submitting, onSubmit }) => {
   })
 
   return (
-    <Formik
-      initialValues={initialValues}
-      onSubmit={handleSubmit}
-      validationSchema={validationSchema}
-      render={({ handleSubmit, handleBlur }) => (
+    <Formik initialValues={initialValues} onSubmit={handleSubmit} validationSchema={validationSchema}>
+      {({ handleSubmit, handleBlur }) => (
         <form onSubmit={handleSubmit} className={BEM()}>
           <Field name={fields.email} onBlur={handleBlur} component={TextField} />
           <Field name={fields.password} onBlur={handleBlur} component={TextField} />
           <Button label="Submit" disabled={submitting}></Button>
         </form>
       )}
-    />
+    </Formik>
   )
 
   function BEM(): string {

@@ -8,14 +8,16 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="shell">
-        <div className="shell__nav">{renderNavLinks()}</div>
-        <div className="shell__body">
+        <nav className="shell__nav" role="navigation">
+          {renderNavLinks()}
+        </nav>
+        <main className="shell__body" role="main">
           <Switch>
             {MAPPED_ROUTES.map((route, index) => (
               <Route key={`route-${index}`} exact path={route.pattern} component={LazyComponent(route.component)} />
             ))}
           </Switch>
-        </div>
+        </main>
       </div>
     </Router>
   )
@@ -23,7 +25,7 @@ const App: React.FC = () => {
   function LazyComponent(Component: React.ComponentType): React.ComponentType {
     return function wrappedWithSuspense(props) {
       return (
-        <Suspense fallback="Loading ...">
+        <Suspense fallback={<h1>Loading ...</h1>}>
           <Component {...props} />
         </Suspense>
       )

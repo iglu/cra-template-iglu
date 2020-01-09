@@ -7,7 +7,7 @@ import './TextField.scss'
 const TextField: React.FC<FieldProps> = (props) => {
   return (
     <FieldControl {...props}>
-      <input className="textfield__field" {...props.field} />
+      <input className="textfield" type="text" {...props.field} />
     </FieldControl>
   )
 }

@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import ReactGA from 'react-ga'
+import * as serviceWorker from './serviceWorker'
+import App from './App'
 
 if (process.env.NODE_ENV !== 'production') {
-  var axe = require('react-axe');
-  axe(React, ReactDOM, 1000);
+  // eslint-disable-next-line
+  const axe = require('react-axe')
+  axe(React, ReactDOM, 1000)
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+if (process.env.GA_ID) {
+  ReactGA.initialize(process.env.GA_ID)
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
 
-serviceWorker.register();
+ReactDOM.render(<App />, document.getElementById('root'))
+
+serviceWorker.register()

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://domain.com/api',
+  baseURL: process.env.API_URL,
 })
 
 api.interceptors.request.use(
