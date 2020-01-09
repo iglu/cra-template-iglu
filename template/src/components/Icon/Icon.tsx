@@ -1,7 +1,8 @@
-import './Icon.scss'
-
 import React from 'react'
 import cn from 'classnames'
+import { EnumLiteralsOf } from '../../types'
+
+import './Icon.scss'
 
 import { ReactComponent as Zoo } from './Icons/zoo.svg'
 

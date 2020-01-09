@@ -3,7 +3,7 @@ import './Button.scss'
 import React from 'react'
 import cn from 'classnames'
 import Icon, { ICON } from '../Icon/Icon'
-import { Size } from '../../common/semantics'
+import { Size, Level } from '../../types'
 
 export interface ButtonProps {
   href?: string
@@ -13,7 +13,7 @@ export interface ButtonProps {
   label?: string
   iconRight?: ICON
   iconLeft?: ICON
-  variant?: string
+  variant?: Level
   size?: Size
   outlined?: boolean
   curved?: boolean

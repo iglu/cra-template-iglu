@@ -20,7 +20,7 @@ Copy files from `project-folder/src/_PROJECT_ROOT_` to `project-folder/` (can't 
 
 Currently template only updates `package.json` dependencies and scripts object, so we have to add few lines manually:
 
-```
+```sh
 {
   "husky": {
     "hooks": {

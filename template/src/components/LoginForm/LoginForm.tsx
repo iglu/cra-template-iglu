@@ -5,6 +5,7 @@ import objectKeys from '../../utils/helpers'
 import { string, object } from 'yup'
 import TextField from '../form/TextField/TextField'
 import Button from '../Button/Button'
+import { Level } from '../../types'
 
 export interface LoginFormFieldProps {
   email: string
@@ -35,7 +36,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ submitting, onSubmit }) => {
         <form onSubmit={handleSubmit} className={BEM()}>
           <Field name={fields.email} onBlur={handleBlur} component={TextField} />
           <Field name={fields.password} onBlur={handleBlur} component={TextField} />
-          <Button label="Submit" disabled={submitting}></Button>
+          <Button variant={Level.PRIMARY} label="Submit" disabled={submitting}></Button>
         </form>
       )}
     </Formik>

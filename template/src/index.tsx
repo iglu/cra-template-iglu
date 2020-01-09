@@ -2,7 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import ReactGA from 'react-ga'
 import * as serviceWorker from './serviceWorker'
+import AppStore from './store/AppStore/AppStore'
 import App from './App'
+
+import './scss/main.scss'
 
 if (process.env.NODE_ENV !== 'production') {
   // eslint-disable-next-line
@@ -14,6 +17,10 @@ if (process.env.GA_ID) {
   ReactGA.initialize(process.env.GA_ID)
   ReactGA.pageview(window.location.pathname + window.location.search)
 }
+
+const appStore = new AppStore()
+const appStoreContext = React.createContext(appStore)
+export const useAppStore = (): AppStore => React.useContext(appStoreContext)
 
 ReactDOM.render(<App />, document.getElementById('root'))
 
