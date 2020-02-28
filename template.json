@@ -42,7 +42,8 @@
     "mobx-react-lite": "^1.5.2",
     "mobx-react-router": "^4.1.0",
     "babel-plugin-mobx-async-action": "^0.0.6",
-    "react-ga": "^2.7.0"
+    "react-ga": "^2.7.0",
+    "@welldone-software/why-did-you-render": "^4.0.5"
   },
   "scripts": {
     "start": "react-app-rewired start",

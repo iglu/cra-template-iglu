@@ -44,7 +44,7 @@ Currently template only updates `package.json` dependencies and scripts object, 
 
 - Quality tools (code): [Typescript](http://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [React-testing-library](https://testing-library.com/docs/react-testing-library/intro), [Husky](https://github.com/typicode/husky)
 - Quality tools (UI): [Storybook](https://storybook.js.org/)
-- Quality tools (A11y): [React Axe](https://github.com/dequelabs/react-axe)
+- Quality tools (A11y): [React Axe](https://github.com/dequelabs/react-axe), [Why Did You Render](https://github.com/welldone-software/why-did-you-render)
 - Addons: [MobX](https://mobx.js.org/README.html), [SASS](https://sass-lang.com/), [Formik](https://jaredpalmer.com/formik/docs/overview), [ReactGA](https://github.com/react-ga/react-ga)
 - Performance: [Fast Refresh](https://github.com/pmmmwh/react-refresh-webpack-plugin)
 - Hosting: [Netlify](https://www.netlify.com)
